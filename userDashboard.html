@@ -1,4 +1,15 @@
-<div ng-controller="UserDashboardController">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script> 
+    <!-- add reference to angularJS library -->
+
+<script src="userDashboardController.js"></script> 
+    <!-- add reference to the userDashboardController.js file -->
+     <script src="userDashboardService.js"></script> 
+
+         <!-- add reference to the userDashboardService.js file -->
+
+<div ng-app="MyApp" ng-controller="userDashboardController">
+           <!-- add ng-app directive and user lower case for the controller name -->
+
 <input ng-model="searchQuery" ng-change="onSearch()"
 placeholder="Search users...">
 <div ng-repeat="user in filteredUsers">
